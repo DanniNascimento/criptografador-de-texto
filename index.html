@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Decodificador de texto</title>
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="wrapper">
+        <header></header>
+        <main class="texto">
+            <div class="container">
+                <section class="texto__texto">
+                    <div class="container_texto">
+                        <h1 class="dgtexto">Digite seu texto</h1>
+                    </div>
+                    <div class="textarea-container">
+                        <textarea id="input-text" name="nome" rows="15" cols="50"
+                            placeholder="Apenas letras minúsculas e sem acento."></textarea>
+                    </div>
+                    <div class="botao">
+                        <button type="button" id="botao-criptografar" role="button">Criptografar</button>
+                        <button type="button" id="botao-descriptografar" role="button">Descriptografar</button>
+                        <button type="button" id="botao-limpar" role="button">Limpar</button>
+                        <button type="button" id="botao-copiar" role="button">Copiar</button>
+                    </div>
+                </section>
+            </div>
+            <section class="texto__resultado">
+                <img src="./img/Keanu Reeves 1.png" alt="" class="imagem-oculta" id="imagem">
+                <div class="texto-criptografado" id="texto-criptografado" aria-live="polite"></div>
+            </section>
+        </main>
+        <footer>
+            <p>Sistema desenvolvido por Danni Nascimento</p>
+        </footer>
+        <script src="./javascript/app.js" defer></script>
+    </div>
+</body>
+
+</html>
