@@ -93,6 +93,7 @@ canvas {
     resize: both;
     min-height: 150px;
     background-color: #E0FFFF;
+    resize: none;
 }
 
 .textarea-container textarea::placeholder {
